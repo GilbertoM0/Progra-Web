@@ -1,0 +1,96 @@
+.general-conteiner{
+    overflow: hidden;
+    background-color: #eef;
+}
+hr{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+}
+.content {
+    border: 2px solid #eef;
+    width: 520px;
+    background-color: white;
+    margin: 100px 20px 20px 50px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
+    float: left;
+}
+h1{
+    color: #1c1e21;
+    font-family: Arial;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 10px 18px;
+    margin-bottom: 0;
+}
+span{
+    margin: 0 0 0 335px;
+    color: #778;
+}
+h5{
+    color: #606770;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 5px 18px;
+}
+
+.form{
+    margin: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#User{
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px;
+    width: 445px;
+    background-color: #eef;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Psw{
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px;
+    width: 445px;
+    background-color: #eef;
+    margin-bottom: 10px;
+}
+.signUp{
+    /* border: 2px solid black; */
+    margin: 10px 165px;
+}
+a{
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+.RFP{
+    overflow: hidden;
+}
+.Remember{
+    float: left ;
+    margin: 0 0 0 23px;
+}
+.Forget{
+    float: right;
+    margin: 0 35px 0 0;
+}
+.signUp{
+    /* border: 2px solid black; */
+    margin: 10px 160px;
+    }
+.btnSU{
+    font-size: 25px;
+    font-weight: bolder;
+    width: 200px;
+    background-color: rgb(7, 183, 7);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: 20px 0 0 0;
+}
+.img-rigth{
+    /* border: 2px solid black; */
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
+}
