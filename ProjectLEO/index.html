@@ -15,11 +15,11 @@
                     <h5>Welcome back</h5>
                     <hr>
                 </header>
-                <form class="form">
+                <form action="" class="form" id="form">
                     <label for="User">Username:</label>
-                    <input id="User" type="email" placeholder="Enter Username"><br>
+                    <input type="text" id="User" placeholder="Enter Username"><br>
                     <label for="Psw">Password:</label>
-                    <input id="Psw" type="password" placeholder="Enter password">
+                    <input type="password" id="Psw" placeholder="Enter password">
                 </form>
                 <div class="RFP">
                     <div class="Remember">
@@ -30,7 +30,8 @@
                     </div>
                 </div>
                 <div class="signUp">
-                    <input type="button" class="btnSU" value="Sign Up">
+                    <input type="submit" onclick="return enviarForm();" class="btnSU" value="Sign Up">
+                    <p class="error" id="error"></p>
                 </div>
             </div>     
             <div class="img-rigth">
@@ -38,5 +39,7 @@
             </div>
         </div>
     </main>
+
+    <script src="app.js" ></script>
 </body>
 </html>
