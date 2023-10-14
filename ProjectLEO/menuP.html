@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="menuP.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
     <main>
         <div class="menu-container">
             <header>
-                <label for="">ODONTOLOGIA</label>
+                <!-- <label for="">logo cambiar a figure</label> -->
                 <nav>
                     <ul>
+                        <li><a class="logo" href="#">Logo</a></li>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Contactanos</a></li>
                         <li><a href="#">Citas</a></li>
-                        <li><a href="#">Registrate</a></li>
+                        <li><img src="#" alt="cora"></li>
+                        <li><img src="#" alt="shop"></li>
+                        <li><input type="submit" class="Res" name="Res" value="Registrate"></li>
                     </ul>
                 </nav>
             </header>
@@ -35,15 +42,24 @@
             <div class="elemento"></div>
         </div>
         <div class="general-content">
-            <div class="Soluciones">
+            <div class="soluciones">
                 <h2>Soluciones tu puedes</h2>
-              <h3>Servicios de Dermatologia para todas las edades</h3>
-              <p>At our dermatological office, we strive to provide high-quality solutions that keep your skin healthy and beautiful. With a variety of comprehensive services available, from professional skincare products to treatments and procedures tailored specifically for you, we believe in providing care of the highest caliber. Our board-certified dermatologists are dedicated to addressing all of your skin concerns with innovative solutions at every stage of life. Let us help you achieve optimal skin health - contact us today to schedule an appointment!</p>
+                <h3>Servicios de Dermatologia para todas las edades</h3>
+                <p>At our dermatological office, we strive to provide high-quality solutions that keep your skin healthy
+                    and beautiful. With a variety of comprehensive services available, from professional skincare
+                    products to treatments and procedures tailored specifically for you, we believe in providing care of
+                    the highest caliber. Our board-certified dermatologists are dedicated to addressing all of your skin
+                    concerns with innovative solutions at every stage of life. Let us help you achieve optimal skin
+                    health - contact us today to schedule an appointment!</p>
+            </div>
+            <div class="h1Ser">
+                <h1>Servicios</h1>
             </div>
             <div class="servicios">
                 <div class="Acne">
                     <h2>Tratamiento de Acne</h2>
-                    <p>We offer personalized acne treatments from experienced dermatologists to help improve your skin.</p>
+                    <p>We offer personalized acne treatments from experienced dermatologists to help improve your skin.
+                    </p>
                 </div>
                 <div class="Skin">
                     <h2>Skin Rejuvenation</h2>
@@ -55,28 +71,46 @@
                 </div>
                 <div class="Botox">
                     <h2>Botox Injections</h2>
-                    <p>Botox injections are a safe and minimally-invasive option to reduce wrinkles and improve the skin's appearance.</p>
+                    <p>Botox injections are a safe and minimally-invasive option to reduce wrinkles and improve the
+                        skin's appearance.</p>
                 </div>
             </div>
+
             <div class="PriceList">
                 <h4>Lista de Precios</h4>
-                <h2>Servicios</h2>
-                <div class="Acne">
-                    <h2>Tratamiento de Acne</h2>
-                    <p>We offer personalized acne treatments from experienced dermatologists to help improve your skin.</p>
-                    <hr>
-                    <p>100 USD</p>
-                    <input type="button" value="Button">
+                <div class="h1Ser">
+                    <h1>Servicios</h1>
                 </div>
-                <div class="Skin">
-                    <h2>Skin Rejuvenation</h2>
-                    <p>Dermatologists use advanced treatments to restore your skin's youthful appearance.</p>
-                    <p>100 USD</p>
-                    <input type="button" value="Button">
+                <div id="PL" class="Acne">
+                    <div class="PLImg">
+                        <img src="../HTML/assets/img/Gryffindor.png" alt="">
+                    </div>
+                    <div class="PLCont">
+                        <h2>Tratamiento de Acne</h2>
+                        <p>We offer personalized acne treatments from experienced dermatologists to help improve your
+                            skin.</p>
+                        <hr>
+                        <p>100 USD</p>
+                        <input type="button" class="PL" value="Button">
+                    </div>
                 </div>
-                <div class="Facial">
+                <div id="PL" class="Skin">
+                    <div class="PLImg">
+                        <img src="../HTML/assets/img/Gryffindor.png" alt="">
+                    </div>
+                    <div class="PLCont">
+                        <h2>Skin Rejuvenation</h2>
+                        <p>Dermatologists use advanced treatments to restore your skin's youthful appearance.</p>
+                        <hr>
+                        <p>100 USD</p>
+                        <input type="button" value="Button">
+                    </div>
+                </div>
+                <div id="PL" class="Facial">
                     <h2>Facial Peel</h2>
-                    <p>Dermatologists provide facial peels to target aging, acne, and sun damage for a youthful and glowing complexion.</p>
+                    <p>Dermatologists provide facial peels to target aging, acne, and sun damage for a youthful and
+                        glowing complexion.</p>
+                    <hr>
                     <p>100 USD</p>
                     <input type="button" value="Button">
                 </div>
@@ -109,10 +143,12 @@
                         <!-- Time -->
                         <input type="time" name="" id=""><br>
                         <!-- formF -->
-                        <input type="text" name="First" id="First" placeholder="Nombre" required>
-                        <input type="text" name="Last" id="Last" placeholder="Apellido" required><br>
-                        <input type="email" name="email" id="email" placeholder="Ingresa Email" required>
-                        <input type="button" name="btnReservar" value="Reservar">
+                        <div class="formF">
+                         <input type="text" name="First" id="First" placeholder="Nombre" required>
+                            <input type="text" name="Last" id="Last" placeholder="Apellido" required><br>
+                            <input type="email" name="email" id="email" placeholder="Ingresa Email" required>
+                            <input type="button" name="btnReservar" value="Reservar">
+                        </div>
                     </form>
                 </div>
                 <div class="formResult">
@@ -135,4 +171,5 @@
         <h3>Creado Por Equipo Miau</h3>
     </footer>
 </body>
+
 </html>

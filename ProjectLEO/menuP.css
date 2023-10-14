@@ -1,13 +1,150 @@
-.carrusel{
+* {
+    color: #84A59D;
+}
+
+.menu-container {
+    color: #FFEDEB;
+    overflow: hidden;
+
+    & nav ul {
+        list-style: none;
+        padding: 0;
+
+        & li {
+            display: inline;
+            margin-right: 10px;
+            /* Ajusta según sea necesario */
+        }
+
+        & .Res {
+            float: right;
+        }
+    }
+}
+
+.menu-container li a {
+    color: #F28482;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Botones */
+input {
+    font-size: 20px;
+    font-weight: bolder;
+    width: 150px;
+    height: 50px;
+    background-color: #84A59D;
+    border: none;
+    color: #fff;
+}
+
+
+
+/* Termina botones */
+.menu-container li img {
+    float: right;
+}
+
+.carrusel {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
 }
 
-.elemento{
+.elemento {
     flex: 1 0 auto;
     margin: 0 50px;
     background-color: red;
     width: 80px;
-    /* height: 50px; */
+    height: 50px;
+}
+
+.soluciones {
+    /* border: 2px solid black; */
+    padding: 30px;
+    background-color: #FFB6AE;
+    font-size: 25px;
+
+    & h2 {
+        margin: 5px 0 5px 10px;
+        font-size: 30px;
+
+    }
+
+    & h3 {
+        margin: 5px 0 10px 10px;
+        font-size: 35px;
+    }
+}
+
+.h1Ser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+.servicios {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .Acne,
+    .Skin,
+    .Facial,
+    .Botox {
+        flex-grow: 1;
+    }
+
+    & .Acne {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    & .Skin {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    & .Facial {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    & .Botox {
+        flex-basis: 100%;
+        order: 4;
+    }
+}
+
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 40px 0 0 0;
+}
+
+.PriceList {
+    background-color: #FDE1DC;
+    border: 2px solid black;
+
+    & #PL {
+        /* border: 2px solid black; */
+        background-color: #FFB6AE;
+        overflow: hidden;
+
+        & .PLImg {
+            /* border: 2px solid black; */
+            float: left;
+        }
+
+        & .PLCont {
+            /* border: 2px solid black; */
+            float: right;
+        }
+    }
 }
