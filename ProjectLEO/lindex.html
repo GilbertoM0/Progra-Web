@@ -15,24 +15,30 @@
                     <h5>Welcome back</h5>
                     <hr>
                 </header>
-                <form action="" class="form" id="form">
+                <form action="" class="form" id="form" method="post">
                     <label for="User">Username:</label>
                     <input type="text" id="User" placeholder="Enter Username"required><br>
                     <label for="Psw">Password:</label>
                     <input type="password" id="Psw" placeholder="Enter password"required>
-                </form>
-                <div class="RFP">
-                    <div class="Remember">
-                        <a href="#">Remember me</a>
+                
+                    <div class="RFP">
+                        <div class="Remember">
+                            <a href="#">Remember me</a>
+                        </div>
+                        <div class="Forget">
+                            <a href="#">Forgot Password?</a>
+                        </div>
                     </div>
-                    <div class="Forget">
-                        <a href="#">Forgot Password?</a>
+                    <!-- <div class="signUp">
+                        <input type="submit" onclick="return enviarForm();" class="btnSU" value="Sign Up">
+                        <p class="error" id="error"></p>
+                    </div> -->
+                    <div class="button-borders">
+                        <input class="primary-button" type="submit" onclick="return enviarForm();"  value="Sign Up">
+                        <!-- <button  onclick="return enviarForm();" class="primary-button"> Sign Up </button> -->
                     </div>
-                </div>
-                <div class="signUp">
-                    <input type="submit" onclick="return enviarForm();" class="btnSU" value="Sign Up">
                     <p class="error" id="error"></p>
-                </div>
+                </form>
             </div>     
             <div class="img-rigth">
                 <img src="./img/odontologo-clinica-dental.jpg" alt="" width="550px" >
