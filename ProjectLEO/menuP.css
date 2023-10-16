@@ -1,10 +1,15 @@
 * {
     color: #84A59D;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu-container {
-    color: #FFEDEB;
+    background-color: #FFEDEB;
     overflow: hidden;
+    padding: 30px;
 
     & nav ul {
         list-style: none;
@@ -15,18 +20,23 @@
             margin-right: 10px;
             /* Ajusta según sea necesario */
         }
-
+        & li a{
+            color: #F28482;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 17px;
+        }
         & .Res {
+            float: right;
+            font-size: 20px;
+        }
+        & li img{
             float: right;
         }
     }
 }
 
-.menu-container li a {
-    color: #F28482;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 
 /* Botones */
 input {
@@ -38,29 +48,76 @@ input {
     border: none;
     color: #fff;
 }
-
-
-
 /* Termina botones */
-.menu-container li img {
-    float: right;
-}
 
-.carrusel {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-}
-
-.elemento {
-    flex: 1 0 auto;
-    margin: 0 50px;
-    background-color: red;
-    width: 80px;
-    height: 50px;
-}
 /* PARA EL CARRUSEL  */
+.slider-box{
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #4A752C;
+    & p{
+        font-size: 30px;
+    }
+}
+.texto h2{
+    font-size: 65px;
+    margin-bottom: 35px;
+}
+.slider-box img{
+    width: 100%;
+    height: 700px;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
 
+    25% {margin-left: -135%;}
+    45% {margin-left: -135%;}
+
+    65% {margin-left: -275%;}
+    100% {margin-left: -275%;}
+
+    
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .slider-box{
+        width: 100%;
+    }
+    .texto{
+        position: absolute;
+        text-align: center;
+        & h2{
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+        & p{
+            font-size: 30px;
+        }
+    }
+}
 /* TERMINA CARRUSEL  */
 
 .soluciones {
@@ -93,6 +150,7 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 20px 30px;
 
     & .Acne,
     .Skin,
@@ -133,7 +191,7 @@ h4 {
 
 .PriceList {
     background-color: #FDE1DC;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
     & #PL {
         /* border: 2px solid black; */
@@ -207,3 +265,7 @@ h4 {
   }
   
 /* formF final */
+
+.Redes{
+    all: unset;
+}
