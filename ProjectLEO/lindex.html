@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="header finisher-header" style="width: auto; height: 560px;">
-    <div class="wrapper">
+    <div class="wrapper"> <!--Fondo -->
         <div class="card-switch">
             <label class="switch">
                <input class="toggle" type="checkbox">
@@ -17,22 +17,25 @@
                <span class="card-side"></span>
                <div class="flip-card__inner">
                   <div class="flip-card__front">
+
                      <div class="title">Log in</div>
-                     <form action="enviar.html" class="flip-card__form" method="post">
-                        <input type="email" placeholder="Email" name="email" class="flip-card__input" required>
-                        <input type="password" placeholder="Password" name="password" class="flip-card__input" required>
-                            <input type="submit" class="flip-card__btn" onclick="return enviarForm();"  value=" Log in">
-                        <p class="error" id="error"></p>
-                     </form>
+                        <form action="enviar.html" class="flip-card__form" method="post">
+                            <input type="email" placeholder="Email" name="email" class="flip-card__input" required>
+                            <input type="password" placeholder="Password" name="password" class="flip-card__input" required>
+                                <input type="submit" class="flip-card__btn" onclick="return enviarForm();"  value=" Log in">
+                                <p class="error" id="error"></p>
+                        </form>
                   </div>
+
                   <div class="flip-card__back">
                      <div class="title">Sign up</div>
-                     <form action="" class="flip-card__form">
-                        <input type="name" placeholder="Name" class="flip-card__input">
-                        <input type="email" placeholder="Email" name="email" class="flip-card__input">
-                        <input type="password" placeholder="Password" name="password" class="flip-card__input">
-                        <input type="submit" class="flip-card__btn" onclick="return enviarForm();"  value="Sign Up">
-                     </form>
+                        <form action="" class="flip-card__form">
+                            <input type="name" placeholder="Name" class="flip-card__input">
+                            <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                            <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                            <input type="submit" class="flip-card__btn" onclick="return enviarForm();"  value="Sign Up">
+                            <p class="error" id="error"></p>
+                        </form>
                   </div>
                </div>
             </label>
