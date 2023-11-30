@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,9 +19,9 @@
                     <ul>
                         <li><a class="logo" href="#">Logo</a></li>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#Servicios">Servicios</a></li>
                         <li><a href="#">Contactanos</a></li>
-                        <li><a href="#">Citas</a></li>
+                        <li><a href="#Citas">Citas</a></li>
                         <!-- <li><img src="#" alt="cora"></li>
                         <li><img src="#" alt="shop"></li> -->
                         <li><input type="submit" class="Res" name="Res" value="Registrate"></li>
@@ -62,7 +62,7 @@
                     concerns with innovative solutions at every stage of life. Let us help you achieve optimal skin
                     health - contact us today to schedule an appointment!</p>
             </div>
-            <div class="h1Ser">
+            <div class="h1Ser" id="Servicios">
                 <h1>Servicios</h1>
             </div>
             <div class="servicios">
@@ -152,13 +152,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="formContainer">
+            <div class="formContainer" id="Citas">
+                <h2>Reserva online ahora</h2>
+                <h4>Solicitar una nueva cita</h4>
                 <div class="formDates">
-                    <h2>Reserva online ahora</h2>
-                    <h4>Solicitar una nueva cita</h4>
+                            <input type="text" name="First" id="First" placeholder="Nombre" required>
+                            <input type="text" name="Last" id="Last" placeholder="Apellido" required><br>
+                            <input type="email" name="email" id="email" placeholder="Ingresa Email" required>
+
                     <form action="">
                         <!-- Locacion -->
-                        <select class="For">
+                        <select class="For" id="fors" >
                             <option value="d">Locacion</option>
                             <option value="J">Jiquilpan</option>
                             <option value="S">Sahuayo</option>
@@ -166,16 +170,18 @@
                             <option value="O">Otro</option>
                         </select>
                         <!-- Servicios -->
-                        <select name="" id="">
+                        <select name="" id="fors">
                             <option value="d">Servicios</option>
                             <option value="a">Acne</option>
                             <option value="s">Skin</option>
                             <option value="f">Facial</option>
                         </select>
                         <!-- Date -->
-                        <input type="date" value="Date">
+                        <input type="date" value="Date" class="clean" >
                         <!-- Time -->
                         <input type="time" name="" id=""><br>
+                        <input type="button" name="btnReservar" value="Reservar" id="btnReservar">
+
                         <!-- formF -->
                         <!-- <div class="formF">
                             <input type="text" name="First" id="First" placeholder="Nombre" required>
@@ -183,11 +189,7 @@
                             <input type="email" name="email" id="email" placeholder="Ingresa Email" required>
                             <input type="button" name="btnReservar" value="Reservar">
                         </div> -->
-                        <div class="input-container">
-                            <input placeholder="Enter text" class="input-field" type="text">
-                            <label for="input-field" class="input-label">Enter text</label>
-                            <span class="input-highlight"></span>
-                          </div>
+                        
                           
                     </form>
                 </div>
@@ -199,6 +201,8 @@
         </div>
     </main>
     <footer>
+        <iframe src="https://www.google.com/maps/embed?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA" width="100%
+        " height="450" allowfullscreen></iframe>
         <div class="Redes">
             <h2>Belleza y salud</h2>
             <div class="f"></div>
